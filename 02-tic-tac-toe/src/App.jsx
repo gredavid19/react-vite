@@ -46,7 +46,6 @@ function App() {
   const checkWinner = (boardToCheck) => {
     // Verificar si hay un ganador
     for (const combo of WINNER_COMBOS) {
-      console.log(combo);
       const [a, b, c] = combo 
       if (
         boardToCheck[a] &&
@@ -55,9 +54,9 @@ function App() {
       ) {        
         return boardToCheck[a] // X o O
       }
-      // Si no hay ganador
-      return null
     }
+    // Si no hay ganador
+    return null
    }
 
   const updateBoard = (index) => {
