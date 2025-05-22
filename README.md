@@ -6,17 +6,12 @@ A collection of my development projects showcasing different technologies and so
 
 ### 1. [Tic Tac Toe Game](N. 02)
 **Tech Stack**: React, 
-- Real-time task updates with drag-and-drop
-- Customizable workspace views
-- Role-based access control
-- **Key Feature**: Offline-first PWA implementation
+- Real-time playing
+- Dynamic user interface
 
 ### 2. [E-Commerce Platform](N. 03)
-**Tech Stack**: React, Node.js, Sequelize, Tailwind CSS  
+**Tech Stack**: React, Tailwind CSS  
 - Built product catalog with filters and search
-- Implemented JWT authentication
-- Developed admin dashboard with analytics
-- **Key Achievement**: Reduced API response time by 40% through query optimization
 
 ## 🛠️ Technology Stack
 
