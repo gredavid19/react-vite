@@ -1,21 +1,21 @@
-import React from 'react'
-import './index.css'
-import { Products } from "./components/Products/Products"
-import { useProducts } from "./hooks/useProducts"
-import { Header } from './components/Header/Header'
-import { useFilters } from './hooks/useFilters'
+import { products as initialProducts } from './mocks/products.json'
+import { Products } from './components/Products.jsx'
+import { Header } from './components/Header.jsx'
+import { useFilters } from './hooks/useFilters.js'
+import { Cart } from './components/Cart.jsx'
+import { CartProvider } from './context/cart.jsx'
 
-
-function App() {
-  const { products } = useProducts()
+function App () {
   const { filterProducts } = useFilters()
-  const filteredProducts = filterProducts(products)
-  
+
+  const filteredProducts = filterProducts(initialProducts)
+
   return (
-    <>
-      <Header/>
-      <Products products={filteredProducts}/>
-    </>
+    <CartProvider>
+      <Header />
+      <Cart />
+      <Products products={filteredProducts} />
+    </CartProvider>
   )
 }
 
